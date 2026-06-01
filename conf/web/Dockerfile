@@ -8,7 +8,7 @@ EXPOSE 5173
 COPY php.ini /usr/local/etc/php/
 COPY *.conf /etc/apache2/sites-enabled/
 
-RUN curl -fsSL https://deb.nodesource.com/setup_19.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 
 RUN apt -y update \
     && apt -y upgrade \
